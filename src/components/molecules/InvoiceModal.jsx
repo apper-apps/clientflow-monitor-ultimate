@@ -101,9 +101,9 @@ setFormData({
     return formData.lineItems.reduce((total, item) => total + (item.amount || 0), 0);
   };
 
-  const getProjectName = (projectId) => {
+const getProjectName = (projectId) => {
     const project = projects.find(p => p.Id === parseInt(projectId));
-    return project ? project.name : 'Unknown Project';
+    return project ? project.Name : 'Unknown Project';
   };
 
   const getProjectClientId = (projectId) => {
@@ -208,9 +208,9 @@ try {
             disabled={loadingProjects}
           >
             <option value="">Select a project</option>
-            {projects.map(project => (
+{projects.map(project => (
               <option key={project.Id} value={project.Id}>
-                {project.name} - Client ID: {project.clientId}
+                {project.Name} - Client ID: {project.clientId}
               </option>
             ))}
           </select>

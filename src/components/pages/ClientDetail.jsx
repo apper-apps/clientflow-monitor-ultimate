@@ -133,8 +133,8 @@ const ClientDetail = () => {
             <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-lg">
               <ApperIcon name="User" size={18} className="text-white" />
             </div>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-              {client.name}
+<h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+              {client.Name}
             </h1>
             <Badge variant={client.status === "active" ? "success" : "secondary"}>
               {client.status}
@@ -166,13 +166,13 @@ const ClientDetail = () => {
             </h2>
             
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+<div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-white font-semibold shadow-lg">
-                  {client.name.charAt(0).toUpperCase()}
+                  {client.Name.charAt(0).toUpperCase()}
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-white">
-                    {client.name}
+                    {client.Name}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     {client.company}
@@ -307,9 +307,9 @@ const ClientDetail = () => {
                       <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
                         <ApperIcon name={getStatusIcon(project.status)} size={14} className="text-white" />
                       </div>
-                      <div>
+<div>
                         <h3 className="font-medium text-gray-900 dark:text-white">
-                          {project.name}
+                          {project.Name}
                         </h3>
                         <div className="flex items-center gap-4 mt-1">
                           <span className="text-sm text-gray-600 dark:text-gray-400">

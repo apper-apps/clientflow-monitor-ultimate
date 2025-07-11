@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
-import DashboardStats from "@/components/organisms/DashboardStats";
-import RecentActivity from "@/components/organisms/RecentActivity";
-import QuickActions from "@/components/organisms/QuickActions";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
 import ApperIcon from "@/components/ApperIcon";
+import QuickActions from "@/components/organisms/QuickActions";
+import RecentActivity from "@/components/organisms/RecentActivity";
+import DashboardStats from "@/components/organisms/DashboardStats";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
 import { getDashboardData } from "@/services/api/dashboardService";
 
 const Dashboard = () => {
@@ -75,7 +75,7 @@ const Dashboard = () => {
         </p>
       </motion.div>
 
-      {/* Welcome Message */}
+{/* Welcome Message */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,8 +83,8 @@ const Dashboard = () => {
         className="bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 rounded-2xl p-6 text-white shadow-xl"
       >
         <div className="flex items-center justify-between">
-          <div className="space-y-2">
-            <h2 className="text-xl font-semibold">Good morning, John! 👋</h2>
+          <div>
+            <h2 className="text-xl font-semibold">Good morning! 👋</h2>
             <p className="text-primary-100">
               You have 3 projects due this week and 5 pending invoices to review.
             </p>
